@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CinemaFilm</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../index.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link">CinemaFilm</a>
+        </div>
+
+        <div class="pull-right">
+            <a href="#" class="header__toggle-button" id="tB">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </a>
+            <nav class="header__nav ">
+                <div class="primary-nav">
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Фильмы</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Кинотеатры</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>События</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Акции</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="secondary-nav" style="display: none">
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Фильмы</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Кинотеатры</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>События</span>
+                        </a>
+                    </div>
+                    <div class="header__nav__sub-group">
+                        <a class="header__nav__link">
+                            <span>Акции</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</header>
+<main>
+    <div class="hero">
+        <div class="hero__scroll">
+            <div class="scroll__list">
+                <div class="list__item">
+                    <div class="item-img"
+                         style="background-image: linear-gradient(0deg, rgba(14,14,16,1) 0%, rgba(14,14,16,1) 20%, rgba(255,255,255,0) 100%),
+                         url(../img/Nomadland.png)">
+                    </div>
+                    <div class="item-content">
+                        <div class="text-block__duration">ДЛИТЕЛЬНОСТЬ 1ч 48мин</div>
+                        <div class="text-block__info">
+                            <span class="info__rating">Афиша 6.9</span>
+                            <span class="info__genres">драма 18+</span>
+                        </div>
+                        <div class="official-name">Nomadland (2020, США)</div>
+                        <div>
+                            <span class="official-name-ru">Земля кочевников</span>
+                            <span class="rars">18+</span>
+                        </div>
+                        <div class="text">
+                            Ферн остается без работы и без дома, когда во время экономического кризиса закрывается
+                            единственная
+                            фабрика
+                            в её небольшом городке. Единственный выход для Ферн - погрузить свой небогатый скарб в
+                            фургон и стать
+                            одной
+                            из племени современных кочевников, путешествующих от штата к штату в поисках сезонного
+                            заработка.
+                        </div>
+                        <div class="item-links">
+                            <div class="multiple-buttons">
+                                <a class="button-gray" href="#">Купить билет</a>
+                            </div>
+                            <div class="multiple-buttons">
+                                <a class="button-gray" href="#">Трейлер</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="click-strip">
+                <li class="click-active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="select-row">
+            <div class="select-col">
+                <select class="custom-select2">
+                    <option value="1">Кино</option>
+                    <option value="2">Театр</option>
+                </select>
+            </div>
+            <div class="select-col">
+                <select class="custom-select2">
+                    <option value="-1">жанр</option>
+                    <option value="0" class="">семейный</option>
+                    <option value="1" class="">детектив</option>
+                    <option value="2" class="">триллер</option>
+                    <option value="3" class="">комедия</option>
+                    <option value="4" class="">мелодрама</option>
+                    <option value="5" class="">фантастика</option>
+                    <option value="6" class="">экшн</option>
+                    <option value="7" class="">анимация</option>
+                    <option value="8" class="">приключения</option>
+                    <option value="9" class="">драма</option>
+                    <option value="10" class="">боевик</option>
+                    <option value="11" class="">хоррор</option>
+                    <option value="12" class="">документальный</option>
+                    <option value="13" class="">фэнтези</option>
+                    <option value="14" class="">биография</option>
+                    <option value="15" class="">спорт</option>
+                    <option value="16" class="">мистика</option>
+                    <option value="17" class="">ужасы</option>
+                    <option value="18" class="">криминальная комедия</option>
+                    <option value="19" class="">музыка</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div class="film-card">
+                <span class="film-card__rars">6+</span>
+                <img class="film-card__img" src="../img/tom-jerry.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Том и Джерри</span>
+                    <span class="info__genre">Комедия, Приключения, Семейный</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">18+</span>
+                <img class="film-card__img" src="../img/nobody.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Никто</span>
+                    <span class="info__genre">Триллер, Экшн</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">16+</span>
+                <img class="film-card__img" src="../img/the-father.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Отец</span>
+                    <span class="info__genre">драма, комедия</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">16+</span>
+                <img class="film-card__img" src="../img/the-courier.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Игры шпионов</span>
+                    <span class="info__genre">триллер</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">18+</span>
+                <img class="film-card__img" src="../img/crisis.webp">
+                <div class="film-card__info">
+                    <span class="info__name">Трафик</span>
+                    <span class="info__genre">Драма</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">18+</span>
+                <img class="film-card__img" src="../img/nomadland.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Земля кочевников</span>
+                    <span class="info__genre">Драма</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">18+</span>
+                <img class="film-card__img" src="../img/the-mauritanian.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Мавританец</span>
+                    <span class="info__genre">Детектив, Триллер</span>
+                </div>
+            </div>
+            <div class="film-card">
+                <span class="film-card__rars">6+</span>
+                <img class="film-card__img" src="../img/raya-and-the-last-dragon.jpg">
+                <div class="film-card__info">
+                    <span class="info__name">Райя и последний дракон </span>
+                    <span class="info__genre">Анимация, Приключения</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-wrap">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link-sm">CinemaFilm</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

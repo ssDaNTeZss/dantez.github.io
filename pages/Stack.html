@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/hm2.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link">Stack</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="mainContainer" class="main-container" style="margin: 140px 0 40px 0">
+        <div class="stack">
+            <label for="text">Введите элементы Стека через (, ):</label>
+            <textarea id="text" name="story" rows="7" cols="33" placeholder="123, 456, 789"></textarea>
+            <div class="stack__buttons">
+                <div class="multiple-buttons">
+                    <a id="add" class="button-green" href="#">Добавить элемент</a>
+                </div>
+                <div class="multiple-buttons">
+                    <a id="del" class="button-yellow" href="#">Удалить верхний элемент</a>
+                </div>
+                <div class="multiple-buttons">
+                    <a id="clear" class="button-red" href="#">Очистить стек</a>
+                </div>
+            </div>
+            <div id="count" class="stack-count"></div>
+        </div>
+        <div id="container" class="stack"></div>
+    </div>
+</main>
+
+<footer class="footer-wrap">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link-sm">Stack</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -549,22 +549,6 @@ li.click-active {
     text-transform: lowercase;
 }
 
-@media (max-width: 1024px) {
-    .film-card {
-        width: calc(33.333% - 33px);
-    }
-}
-
-@media (max-width: 768px) {
-    .select-col {
-        width: calc(100% - 14px);
-    }
-
-    .film-card {
-        width: calc(50% - 33px);
-    }
-}
-
 .footer-wrap {
     border-top: 2pt solid rgba(77, 77, 77, 0.2);
     background: #0e0e10;
@@ -704,4 +688,77 @@ label {
     font-weight: bold;
     color: white;
     margin-top: 20px;
+}
+
+.addedObject {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: calc(25% - 33px);
+    min-height: 100px;
+    margin-bottom: 30px;
+    background-color: rgb(104, 104, 104);
+}
+
+.closeButton {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    padding:  2px 5px 2px 5px;
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0 0 8px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.makeBlock30 {
+    width: calc(30% - 10px);
+    height: auto;
+    display: inline-block;
+}
+
+.makeBlock70 {
+    width: calc(70% - 10px);
+    height: auto;
+    display: inline-block;
+}
+
+.text-info {
+    position: absolute;
+    font-size: 20pt;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .film-card {
+        width: calc(33.333% - 33px);
+    }
+
+    .addedObject {
+        width: calc(33.333% - 33px);
+    }
+}
+
+@media (max-width: 768px) {
+    .select-col {
+        width: calc(100% - 14px);
+    }
+
+    .film-card {
+        width: calc(50% - 33px);
+    }
+
+    .addedObject {
+        width: calc(50% - 33px);
+    }
 }

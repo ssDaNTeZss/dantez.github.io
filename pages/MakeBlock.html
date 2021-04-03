@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MakeBlock</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/hm3.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link">MakeBlock</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="mainContainer" class="main-container" style="margin: 140px 0 40px 0">
+        <div class="main-container">
+            <div class="select-row">
+                <div class="select-col">
+                    <h3 style="color: white">makeBlock(
+                        <input type="text" id="parentInput" size="6" value="container" disabled>
+                        )(
+                        <input type="text" id="childInput" size="6" value="div" disabled>
+                        )(
+                        <input type="text" id="countObj" size="3" value="5" pattern="[0-9]{,3}">
+                        )
+                    </h3>
+                    <div class="stack__buttons">
+                        <div class="multiple-buttons">
+                            <a id="add" class="button-green" href="#">Добавить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-wrap">
+    <div class="grid-row">
+        <div class="grid-col">
+            <a class="header-logo-link-sm">MakeBlock</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

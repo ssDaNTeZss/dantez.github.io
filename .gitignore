@@ -1,2 +1,2 @@
-./scripts/test.js
-./webpack-test/node_modules
+scripts/test.js
+webpack-test/node_modules
